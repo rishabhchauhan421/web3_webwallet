@@ -31,8 +31,10 @@ export default function Example() {
               <input
                 id="seed-phrase"
                 name="seed"
-                type="seed"
-                onChange={(e) => setMnemonic(e.target.value)}
+                type="text"
+                onChange={(e) => {
+                  mnemonic = e.target.value;
+                }}
                 placeholder="Enter your seed phrase"
                 className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
               />
